@@ -1,0 +1,377 @@
+[
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 757.22998046875,
+      "y": 36.630001068115234,
+      "z": 937.3499755859375
+    },
+    "fr_spawns": 9,
+    "frencounter": "0xCBC824216CF129E5",
+    "group_id": 0,
+    "group_seed": 14294425235676046133,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Rhyhorn",
+      "index": 111,
+      "is_gender_dimorphic": false,
+      "species": "Rhyhorn"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 786.6900024414062,
+      "y": 49.0099983215332,
+      "z": 753.27001953125
+    },
+    "fr_spawns": 10,
+    "frencounter": "0xE680740C6BE14EFB",
+    "group_id": 1,
+    "group_seed": 7098511073089161803,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Geodude",
+      "index": 74,
+      "is_gender_dimorphic": false,
+      "species": "Geodude"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0x12747C70D0AE7DF0",
+    "coords": {
+      "x": 621.77001953125,
+      "y": 56.70000076293945,
+      "z": 960.719970703125
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x2BE4440F60B027BC",
+    "group_id": 2,
+    "group_seed": 2348960718848483145,
+    "has_bonus": true,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 63,
+      "id": "Elekid",
+      "index": 239,
+      "is_gender_dimorphic": false,
+      "species": "Elekid"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 536.0499877929688,
+      "y": 87.43000030517578,
+      "z": 852.969970703125
+    },
+    "fr_spawns": 8,
+    "frencounter": "0xC0272DE866874B95",
+    "group_id": 3,
+    "group_seed": 1836029448456743670,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Shinx",
+      "index": 403,
+      "is_gender_dimorphic": false,
+      "species": "Shinx"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 645.3699951171875,
+      "y": 66.56999969482422,
+      "z": 667.72998046875
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x1F9587A4771A0D70",
+    "group_id": 4,
+    "group_seed": 2666668951792357961,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Snover",
+      "index": 459,
+      "is_gender_dimorphic": false,
+      "species": "Snover"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 876.719970703125,
+      "y": 46.36000061035156,
+      "z": 610.3800048828125
+    },
+    "fr_spawns": 8,
+    "frencounter": "0xEBB267557307B5FF",
+    "group_id": 5,
+    "group_seed": 7147992920202704395,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Yanma",
+      "index": 193,
+      "is_gender_dimorphic": false,
+      "species": "Yanma"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 818.72998046875,
+      "y": 25.739999771118164,
+      "z": 449.19000244140625
+    },
+    "fr_spawns": 10,
+    "frencounter": "0x3B40EB53F427739",
+    "group_id": 6,
+    "group_seed": 10856644678729799233,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Misdreavus",
+      "index": 200,
+      "is_gender_dimorphic": false,
+      "species": "Misdreavus"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 629.8800048828125,
+      "y": 109.38999938964844,
+      "z": 543.9000244140625
+    },
+    "fr_spawns": 9,
+    "frencounter": "0x1F9587A4771A0D70",
+    "group_id": 7,
+    "group_seed": 5542281207173531075,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Snover",
+      "index": 459,
+      "is_gender_dimorphic": false,
+      "species": "Snover"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 451.8999938964844,
+      "y": 107.5,
+      "z": 628.0900268554688
+    },
+    "fr_spawns": 9,
+    "frencounter": "0xEBB267557307B5FF",
+    "group_id": 8,
+    "group_seed": 11446190828999504400,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Yanma",
+      "index": 193,
+      "is_gender_dimorphic": false,
+      "species": "Yanma"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0x39054F43071BB73C",
+    "coords": {
+      "x": 390.3599853515625,
+      "y": 86.9000015258789,
+      "z": 870.22998046875
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x1F9587A4771A0D70",
+    "group_id": 9,
+    "group_seed": 16437834591810203143,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Snover",
+      "index": 459,
+      "is_gender_dimorphic": false,
+      "species": "Snover"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 247.5500030517578,
+      "y": 70.27999877929688,
+      "z": 795.3200073242188
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x519961D10096CFF3",
+    "group_id": 10,
+    "group_seed": 3626593653184285828,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Stunky",
+      "index": 434,
+      "is_gender_dimorphic": false,
+      "species": "Stunky"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 147.6999969482422,
+      "y": 94.0999984741211,
+      "z": 720.4000244140625
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x74F99006BF1DF995",
+    "group_id": 11,
+    "group_seed": 6028186600907223969,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 255,
+      "id": "Voltorb",
+      "index": 100,
+      "is_gender_dimorphic": false,
+      "species": "Voltorb"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0x5AE3B5B09F4A4F7E",
+    "coords": {
+      "x": 213.82000732421875,
+      "y": 117.38999938964844,
+      "z": 637.4000244140625
+    },
+    "fr_spawns": 9,
+    "frencounter": "0x1F583F5782609CBD",
+    "group_id": 12,
+    "group_seed": 2167095091627062605,
+    "has_bonus": true,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Chingling",
+      "index": 433,
+      "is_gender_dimorphic": false,
+      "species": "Chingling"
+    }
+  },
+  {
+    "br_spawns": 7,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 323.010009765625,
+      "y": 127.26000213623047,
+      "z": 604.9600219726562
+    },
+    "fr_spawns": 9,
+    "frencounter": "0x7E6885E452C04311",
+    "group_id": 13,
+    "group_seed": 8157843293109441987,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 63,
+      "id": "Electabuzz",
+      "index": 125,
+      "is_gender_dimorphic": false,
+      "species": "Electabuzz"
+    }
+  },
+  {
+    "br_spawns": 6,
+    "brencounter": "0xCBF29CE484222645",
+    "coords": {
+      "x": 453.0,
+      "y": 172.89999389648438,
+      "z": 376.0
+    },
+    "fr_spawns": 8,
+    "frencounter": "0x1F9587A4771A0D70",
+    "group_id": 14,
+    "group_seed": 11457604432010921329,
+    "has_bonus": false,
+    "map_index": 0,
+    "map_name": "Coronet Highlands",
+    "pokemon": {
+      "form_id": "0",
+      "form_name": "",
+      "gender_ratio": 127,
+      "id": "Snover",
+      "index": 459,
+      "is_gender_dimorphic": false,
+      "species": "Snover"
+    }
+  }
+]
