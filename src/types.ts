@@ -37,3 +37,14 @@ export type Spawner = {
   ivs: number;
   name: string;
 };
+
+export type MapInfo = {
+  id: string;
+  name: string;
+  slug: string;
+  number: number;
+};
+
+export type EncounterTable = {
+  [s: string]: { [s: string]: number };
+};

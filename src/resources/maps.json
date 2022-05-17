@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "fieldlands",
+    "id": "obsidianfieldlands",
+    "name": "Obsidian Fieldlands",
+    "number": 1
+  },
+  {
+    "slug": "mirelands",
+    "id": "crimsonmirelands",
+    "name": "Crimson Mirelands",
+    "number": 2
+  },
+  {
+    "slug": "coastlands",
+    "id": "cobaltcoastlands",
+    "name": "Cobalt Coastlands",
+    "number": 3
+  },
+  {
+    "slug": "highlands",
+    "id": "coronethighlands",
+    "name": "Coronet Highlands",
+    "number": 4
+  },
+  {
+    "slug": "icelands",
+    "id": "alabastericelands",
+    "name": "Alabaster Icelands",
+    "number": 5
+  }
+]

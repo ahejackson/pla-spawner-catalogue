@@ -1,3 +1,3 @@
-# PLA MULTIS MAP
+# PLA SPAWNER CATALOGUE
 
-Mapping the multi spawners in Pokemon: Legends Arceus
+A catalogue of the spawners in Pokemon: Legends Arceus

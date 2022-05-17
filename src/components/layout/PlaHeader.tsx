@@ -4,6 +4,7 @@ import {
   MediaQuery,
   Burger,
   useMantineTheme,
+  createStyles,
 } from "@mantine/core";
 
 type PlaHeaderProps = {
@@ -11,8 +12,20 @@ type PlaHeaderProps = {
   burgerOnClicked: () => void;
 };
 
+const useStyles = createStyles((theme, _params, getRef) => {
+  return {
+    highlight: {
+      backgroundImage: "linear-gradient(#04b2d9, #0378a6)",
+      backgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+    },
+  };
+});
+
 function PlaHeader({ burgerOpened, burgerOnClicked }: PlaHeaderProps) {
   const theme = useMantineTheme();
+  const { classes, cx } = useStyles();
+
   return (
     <Header height={70} p="md">
       <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
@@ -26,7 +39,9 @@ function PlaHeader({ burgerOpened, burgerOnClicked }: PlaHeaderProps) {
           />
         </MediaQuery>
 
-        <h1>PLA Spawner Catalogue</h1>
+        <h1>
+          <span className={cx(classes.highlight)}>PLA</span> Spawner Catalogue
+        </h1>
       </div>
     </Header>
   );

@@ -1,11 +1,10 @@
 import L, { LatLngBoundsExpression } from "leaflet";
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import mmoinfo from "../../../mmoinfo.json";
-import MMOMarker from "./MMOMarker";
 import SpawnerMarker from "./SpawnerMarker";
-import spawners from "../../../resources/spawners/obsidianfieldlands.json";
-import { Spawner } from "../../types";
+import type { MapInfo, Spawner } from "../../types";
+import { MarkerClickHandler } from "../../types-app";
+import maps from "../../resources/maps.json";
 
 const bounds: LatLngBoundsExpression = [
   [0, 0],
@@ -19,9 +18,23 @@ const scrollBounds: LatLngBoundsExpression = [
   [-512 - scrollBoundsPadding, 512 + scrollBoundsPadding],
 ];
 
-function PlaMap(props: { children?: ReactNode }) {
-  // const [markers, setMarkers] = useState(mmoinfo);
-  const [markers, setMarkers] = useState(spawners as { [k: string]: Spawner });
+function PlaMap(props: {
+  mapName: string;
+  markerClickHandler?: MarkerClickHandler;
+  children?: ReactNode;
+}) {
+  const [markers, setMarkers] = useState({} as { [k: string]: Spawner });
+  const [map, setMap] = useState(maps.find((m) => m.id === props.mapName)!);
+
+  useEffect(() => {
+    requestMarkers(map);
+  }, []);
+
+  async function requestMarkers(map: MapInfo) {
+    const res = await fetch(`/resources/spawners/${map.id}.json`);
+    const json = await res.json();
+    setMarkers(json);
+  }
 
   return (
     <div className="App">
@@ -36,12 +49,16 @@ function PlaMap(props: { children?: ReactNode }) {
         attributionControl={false}
       >
         <TileLayer
-          url="img/tiles/obsidianfieldlands/tile_{z}-{x}-{y}.png"
+          url={`/img/tiles/${props.mapName}/tile_{z}-{x}-{y}.png`}
           bounds={bounds}
           maxNativeZoom={2}
         />
         {Object.keys(markers).map((key) => (
-          <SpawnerMarker spawner={markers[key]} key={key} />
+          <SpawnerMarker
+            spawner={markers[key]}
+            clickHandler={props.markerClickHandler}
+            key={key}
+          />
         ))}
       </MapContainer>
     </div>

@@ -1,9 +1,10 @@
 import { Aside, Text } from "@mantine/core";
+import { ReactNode } from "react";
 
-function PlaSidebar() {
+function PlaSidebar({ children, ...props }: { children: ReactNode }) {
   return (
-    <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-      <Text>Information about the Spawner goes here</Text>
+    <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }} {...props}>
+      {children}
     </Aside>
   );
 }
