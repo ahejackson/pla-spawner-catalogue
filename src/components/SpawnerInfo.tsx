@@ -1,6 +1,30 @@
 import { useEffect, useState } from "react";
-import { Accordion, Group, Text } from "@mantine/core";
+import { Accordion, Group, Text, Switch, Stack } from "@mantine/core";
 import type { EncounterTable, MapInfo, Spawner } from "../types";
+
+type EncounterTablePercentages = {
+  [s: string]: { [s: string]: string };
+};
+
+function getEnctablePercentages(
+  enctable: EncounterTable
+): EncounterTablePercentages {
+  const percentages: EncounterTablePercentages = {};
+  for (const conditions in enctable) {
+    percentages[conditions] = {};
+    let encsum = 0;
+    for (const pokemon in enctable[conditions]) {
+      encsum += enctable[conditions][pokemon];
+    }
+
+    let encsofar = 0;
+    for (const pokemon in enctable[conditions]) {
+      encsofar += enctable[conditions][pokemon];
+      percentages[conditions][pokemon] = (encsofar / encsum).toFixed(3);
+    }
+  }
+  return percentages;
+}
 
 function SpawnerInfo({ map, spawner }: { map?: MapInfo; spawner?: Spawner }) {
   const [enctables, setEnctables] = useState<
@@ -10,6 +34,11 @@ function SpawnerInfo({ map, spawner }: { map?: MapInfo; spawner?: Spawner }) {
   const [enctable, setEnctable] = useState<EncounterTable | undefined>(
     undefined
   );
+
+  const [enctablePercentages, setEnctablePercentages] =
+    useState<EncounterTablePercentages>({});
+
+  const [showPercentages, setShowPerecentages] = useState(true);
 
   useEffect(() => {
     if (map) {
@@ -24,6 +53,9 @@ function SpawnerInfo({ map, spawner }: { map?: MapInfo; spawner?: Spawner }) {
       const spawnerInfo = enctables[spawner.name];
       if (spawnerInfo) {
         setEnctable(spawnerInfo as EncounterTable);
+        setEnctablePercentages(
+          getEnctablePercentages(spawnerInfo as EncounterTable)
+        );
       }
     }
   }, [map, spawner]);
@@ -40,15 +72,30 @@ function SpawnerInfo({ map, spawner }: { map?: MapInfo; spawner?: Spawner }) {
   }
 
   return (
-    <div>
+    <Stack>
       <Text>Group ID: {spawner.groupID}</Text>
       <Text>Spawner Name: {spawner.name}</Text>
-      {enctable ? <EncounterTableInfo enctable={enctable} /> : ""}
-    </div>
+      <Switch
+        checked={showPercentages}
+        onChange={(event) => setShowPerecentages(event.currentTarget.checked)}
+        label="Show encounters as range"
+      />
+      {enctable ? (
+        <EncounterTableInfo
+          enctable={showPercentages ? enctablePercentages! : enctable}
+        />
+      ) : (
+        ""
+      )}
+    </Stack>
   );
 }
 
-function EncounterTableInfo({ enctable }: { enctable: EncounterTable }) {
+function EncounterTableInfo({
+  enctable,
+}: {
+  enctable: EncounterTable | EncounterTablePercentages;
+}) {
   return (
     <Accordion multiple>
       {Object.keys(enctable).map((condition) => (
